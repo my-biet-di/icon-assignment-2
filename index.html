@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>
+        My first web
+    </title>
+
+    <style>
+        .row {
+            width: 720px;
+            margin: 10px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px;
+        } 
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+</head>
+
+<body style="background-color:antiquewhite;">
+<div class = "row">
+    <div class="image-container"><img id="icon 1" src = "2x/Asset 2@2x.png" onmouseover="this.src='2x/Asset 2@2.2x.png';" onmouseout="this.src='2x/Asset 2@2x.png';"/></div>
+    <div class="image-container"><img id="icon 2" src = "2x/Asset 3@2x.png" onmouseover="this.src='2x/Asset 3@2x.2.png';" onmouseout="this.src='2x/Asset 3@2x.png';"/></div>
+    <div class="image-container"><img id="icon 3" src = "2x/Asset 12@2x.png"onmouseover="this.src='2x/Asset 4@2x.2.png';" onmouseout="this.src='2x/Asset 12@2x.png';"/></div>
+</div>
+
+<div class = "row">
+    <div class="image-container"><img id="icon 4" src = "2x/Asset 6@2x.png" onmouseover="this.src='2x/Asset 6@2x.2.png';" onmouseout="this.src='2x/Asset 6@2x.png';"/></div>
+    <div class="image-container"><img id="icon 5" src = "2x/Asset 7@2x.png" onmouseover="this.src='2x/Asset 7@2x.2.png';" onmouseout="this.src='2x/Asset 7@2x.png';"/></div>
+    <div class="image-container"><img id="icon 6" src = "2x/Asset 8@2x.png" onmouseover="this.src='2x/Asset 8@2x.2.png';" onmouseout="this.src='2x/Asset 8@2x.png';"/></div>
+</div>
+
+<div class = "row">
+    <div class="image-container"><img id="icon 7" src = "2x/Asset 9@2x.png" onmouseover="this.src='2x/Asset 9@2x.2.png';" onmouseout="this.src='2x/Asset 9@2x.png';"/></div>
+    <div class="image-container"><img id="icon 8" src = "2x/Asset 10@2x.png" onmouseover="this.src='2x/Asset 10@2x.2.png';" onmouseout="this.src='2x/Asset 10@2x.png';"/></div>
+    <div class="image-container"><img id="icon 9" src = "2x/Asset 11@2x.png" onmouseover="this.src='2x/Asset 11@2x.2.png';" onmouseout="this.src='2x/Asset 11@2x.png';"/></div>
+</div>
+
+<script>
+    var sound1 = new buzz.sound("sound/wind.mp3");
+    var sound2 = new buzz.sound("sound/bubble.mp3");
+    var sound3 = new buzz.sound("sound/keng.mp3");
+    var sound4 = new buzz.sound("sound/fishing.mp3");
+    var sound5 = new buzz.sound("sound/dream.mp3");
+    var sound6 = new buzz.sound("sound/water.mp3");
+    var sound7 = new buzz.sound("sound/sparkle.mp3");
+    var sound8 = new buzz.sound("sound/sheep.mp3");
+    var sound9 = new buzz.sound("sound/shine.mp3");
+
+    window.onload = function (){
+        document.getElementById('icon 1').addEventListener('click', function () {sound1.play();});
+        document.getElementById('icon 2').addEventListener('click', function () {sound2.play();});
+        document.getElementById('icon 3').addEventListener('click', function () {sound3.play();});
+        document.getElementById('icon 4').addEventListener('click', function () {sound4.play();});
+        document.getElementById('icon 5').addEventListener('click', function () {sound5.play();});
+        document.getElementById('icon 6').addEventListener('click', function () {sound6.play();});
+        document.getElementById('icon 7').addEventListener('click', function () {sound7.play();});
+        document.getElementById('icon 8').addEventListener('click', function () {sound8.play();});
+        document.getElementById('icon 9').addEventListener('click', function () {sound9.play();});
+    };
+</script>
+</body>
